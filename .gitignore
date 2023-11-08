@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+
+# Core ML
+Checkpoints
+Models
+
+# Xcode
+.build
+xcuserdata
+Packages

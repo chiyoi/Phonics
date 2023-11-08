@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "34BBD5BB-4073-412A-99F6-7D6D24398F2A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "userAttachmentLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Phonics.xcodeproj",
+        "identifier" : "3E5873932AF73AC6003C976A",
+        "name" : "PhonicsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
