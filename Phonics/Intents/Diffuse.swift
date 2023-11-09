@@ -23,7 +23,7 @@ struct Diffuse: AppIntent {
     static var description = IntentDescription("Diffuse with prompt.")
     
     static var parameterSummary: some ParameterSummary {
-        Summary("Diffuse with \(\.$prompt).")
+        Summary("Diffuse with \(\.$prompt)")
     }
     
     @Parameter(
@@ -89,6 +89,7 @@ struct Diffuse: AppIntent {
         guard let data = bitmap.representation(using: .png, properties: [:]) else {
             throw Error.failedGettingResult
         }
+#elseif os(iOS)
 #endif
         
         let filename = "\(prompt)-\(seed).png"
