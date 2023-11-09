@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "PhonicsIcon-iOS.png",
+      "filename" : "PhonicsIcon.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -13,13 +13,13 @@
       "size" : "16x16"
     },
     {
-      "filename" : "PhonicsIcon-macOS-32.png",
+      "filename" : "PhonicsIcon-macOS-32 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "PhonicsIcon-macOS-32 1.png",
+      "filename" : "PhonicsIcon-macOS-32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -37,25 +37,25 @@
       "size" : "128x128"
     },
     {
-      "filename" : "PhonicsIcon-macOS-256.png",
+      "filename" : "PhonicsIcon-macOS-256 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "PhonicsIcon-macOS-256 1.png",
+      "filename" : "PhonicsIcon-macOS-256.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
-      "filename" : "PhonicsIcon-macOS-512.png",
+      "filename" : "PhonicsIcon-macOS-512 1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
-      "filename" : "PhonicsIcon-macOS-512 1.png",
+      "filename" : "PhonicsIcon-macOS-512.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"

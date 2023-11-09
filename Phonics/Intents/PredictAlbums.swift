@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PredictAlbums: AppIntent {
     
-    static var title: LocalizedStringResource = "Predict Albums - dev"
+    static var title: LocalizedStringResource = "Predict Albums"
     static var description = IntentDescription("Predict albums of photos.")
     
     static var parameterSummary: some ParameterSummary {
