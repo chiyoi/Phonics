@@ -15,7 +15,7 @@ struct PhonicsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhonicsView()
         }
     }
 }

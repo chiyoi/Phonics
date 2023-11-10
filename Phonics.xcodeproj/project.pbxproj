@@ -10,9 +10,11 @@
 		3E5873872AF73AC4003C976A /* PhonicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5873862AF73AC4003C976A /* PhonicsApp.swift */; };
 		3E58738B2AF73AC6003C976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E58738A2AF73AC6003C976A /* Assets.xcassets */; };
 		3E5873992AF73AC6003C976A /* PhonicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5873982AF73AC6003C976A /* PhonicsTests.swift */; };
+		3EBB7D6D2AFE6E4300A193FB /* PredictAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB7D6C2AFE6E4300A193FB /* PredictAlbumView.swift */; };
+		3EBB7D6F2AFE6E6D00A193FB /* DiffuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB7D6E2AFE6E6D00A193FB /* DiffuseView.swift */; };
 		3EE4A5192AF7E021002E4BF3 /* PhonicsClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5182AF7E021002E4BF3 /* PhonicsClassifier.mlpackage */; };
 		3EE4A51B2AF7F179002E4BF3 /* PredictAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A51A2AF7F179002E4BF3 /* PredictAlbums.swift */; };
-		3EE4A5282AF91910002E4BF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5272AF91910002E4BF3 /* ContentView.swift */; };
+		3EE4A5282AF91910002E4BF3 /* PhonicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5272AF91910002E4BF3 /* PhonicsView.swift */; };
 		3EE4A52C2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit in Resources */ = {isa = PBXBuildFile; fileRef = 3EE4A52B2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit */; };
 		3EE4A5652AF942BA002E4BF3 /* Diffuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5642AF942BA002E4BF3 /* Diffuse.swift */; };
 		3EE4A5682AF94300002E4BF3 /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = 3EE4A5672AF94300002E4BF3 /* StableDiffusion */; };
@@ -36,9 +38,11 @@
 		3E58738C2AF73AC6003C976A /* Phonics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phonics.entitlements; sourceTree = "<group>"; };
 		3E5873942AF73AC6003C976A /* PhonicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5873982AF73AC6003C976A /* PhonicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsTests.swift; sourceTree = "<group>"; };
+		3EBB7D6C2AFE6E4300A193FB /* PredictAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAlbumView.swift; sourceTree = "<group>"; };
+		3EBB7D6E2AFE6E6D00A193FB /* DiffuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffuseView.swift; sourceTree = "<group>"; };
 		3EE4A5182AF7E021002E4BF3 /* PhonicsClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = PhonicsClassifier.mlpackage; path = Phonics/Models/PhonicsClassifier.mlpackage; sourceTree = SOURCE_ROOT; };
 		3EE4A51A2AF7F179002E4BF3 /* PredictAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAlbums.swift; sourceTree = "<group>"; };
-		3EE4A5272AF91910002E4BF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3EE4A5272AF91910002E4BF3 /* PhonicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsView.swift; sourceTree = "<group>"; };
 		3EE4A52B2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit"; sourceTree = "<group>"; };
 		3EE4A5642AF942BA002E4BF3 /* Diffuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffuse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +118,9 @@
 		3EE4A5262AF918FF002E4BF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3EE4A5272AF91910002E4BF3 /* ContentView.swift */,
+				3EE4A5272AF91910002E4BF3 /* PhonicsView.swift */,
+				3EBB7D6E2AFE6E6D00A193FB /* DiffuseView.swift */,
+				3EBB7D6C2AFE6E4300A193FB /* PredictAlbumView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,10 +241,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE4A5192AF7E021002E4BF3 /* PhonicsClassifier.mlpackage in Sources */,
+				3EBB7D6F2AFE6E6D00A193FB /* DiffuseView.swift in Sources */,
 				3E5873872AF73AC4003C976A /* PhonicsApp.swift in Sources */,
-				3EE4A5282AF91910002E4BF3 /* ContentView.swift in Sources */,
+				3EE4A5282AF91910002E4BF3 /* PhonicsView.swift in Sources */,
 				3EE4A51B2AF7F179002E4BF3 /* PredictAlbums.swift in Sources */,
 				3EE4A5652AF942BA002E4BF3 /* Diffuse.swift in Sources */,
+				3EBB7D6D2AFE6E4300A193FB /* PredictAlbumView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
