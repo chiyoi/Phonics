@@ -57,13 +57,12 @@ struct Diffuse: ProgressReportingIntent {
     
     @MainActor
     func perform() async throws -> some IntentResult & ReturnsValue<IntentFile> {
-        print("Diffuse v0.1.6")
+        print("Diffuse v0.1.7-rc2")
         
         let seed = seed != nil ? UInt32(seed!) : UInt32.random(in: 0...UInt32.max)
         let targetSize: Float = 512
         
-        print("Generate image.")
-        let image = try await Self.diffuse(
+        let image = try Self.diffuse(
             with: prompt,
             stepCount: stepCount,
             seed: seed,
@@ -73,7 +72,9 @@ struct Diffuse: ProgressReportingIntent {
                 progress.totalUnitCount = Int64(stepCount)
             }
             progress.completedUnitCount = Int64(pipelineProgress.step)
-            await Task.yield()
+            if progress.completedUnitCount % 10 == 0 {
+                print("Pipeline progress: \(progress.completedUnitCount)/\(progress.totalUnitCount)")
+            }
             return true
         }
         
@@ -87,8 +88,8 @@ struct Diffuse: ProgressReportingIntent {
         stepCount: Int,
         seed: UInt32,
         targetSize: Float,
-        progressHandler: (PipelineProgress) async -> Bool
-    ) async throws -> CGImage {
+        progressHandler: (PipelineProgress) -> Bool
+    ) throws -> CGImage {
         guard let resourceURL = Self.resourceURL else {
             throw Error.failedLoadingResource
         }
@@ -106,6 +107,7 @@ struct Diffuse: ProgressReportingIntent {
             script: .latin
         )
         
+        print("Load resources.")
         try pipeline.loadResources()
         
         var pipelineConfig = StableDiffusionPipeline.Configuration(prompt: prompt)
@@ -113,7 +115,8 @@ struct Diffuse: ProgressReportingIntent {
         pipelineConfig.seed = seed
         pipelineConfig.targetSize = targetSize
         
-        let images = try await pipeline.generateImages(
+        print("Generate images.")
+        let images = try pipeline.generateImages(
             configuration: pipelineConfig,
             progressHandler: progressHandler
         )
