@@ -13,7 +13,7 @@ struct PhonicsView: View {
     
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
-            List(selection: $page) {
+            List() {
                 NavigationLink("Phonics", value: Page.Welcome)
                 Divider()
                 NavigationLink("Predict Albums", value: Page.PredictAlbums)
