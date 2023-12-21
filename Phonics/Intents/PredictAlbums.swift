@@ -28,7 +28,7 @@ struct PredictAlbums: AppIntent {
     func perform() async throws -> some IntentResult & ReturnsValue<[String]> {
         var predictions: [String] = []
         
-        let model = try PhonicsClassifier()
+        let model = try Phonics3(configuration: .init())
         
         for photo in photos {
             predictions.append(try await Self.predict(albumOf: photo, using: model))
@@ -37,7 +37,7 @@ struct PredictAlbums: AppIntent {
         return .result(value: predictions)
     }
     
-    static func predict(albumOf photo: IntentFile, using model: PhonicsClassifier) async throws -> String {
+    static func predict(albumOf photo: IntentFile, using model: Phonics3) async throws -> String {
 #if os(macOS)
         guard let image = NSImage(data: photo.data) else {
             throw Error.failedGettingImage
@@ -56,7 +56,7 @@ struct PredictAlbums: AppIntent {
         }
 #endif
         
-        let input = try PhonicsClassifierInput(imageWith: cgImage)
+        let input = try Phonics3Input(imageWith: cgImage)
         
         let res = try await model.prediction(input: input)
         

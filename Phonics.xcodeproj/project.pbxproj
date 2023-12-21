@@ -3,21 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3E5873872AF73AC4003C976A /* PhonicsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5873862AF73AC4003C976A /* PhonicsApp.swift */; };
 		3E58738B2AF73AC6003C976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E58738A2AF73AC6003C976A /* Assets.xcassets */; };
 		3E5873992AF73AC6003C976A /* PhonicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5873982AF73AC6003C976A /* PhonicsTests.swift */; };
-		3EBB7D6D2AFE6E4300A193FB /* PredictAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB7D6C2AFE6E4300A193FB /* PredictAlbumView.swift */; };
-		3EBB7D6F2AFE6E6D00A193FB /* DiffuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB7D6E2AFE6E6D00A193FB /* DiffuseView.swift */; };
-		3EE4A5192AF7E021002E4BF3 /* PhonicsClassifier.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5182AF7E021002E4BF3 /* PhonicsClassifier.mlpackage */; };
+		3E5DC1622B344B7C00F69E1E /* Phonics3.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DC1612B344B7C00F69E1E /* Phonics3.mlpackage */; };
+		3EE4A5192AF7E021002E4BF3 /* Phonics2.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5182AF7E021002E4BF3 /* Phonics2.mlpackage */; };
 		3EE4A51B2AF7F179002E4BF3 /* PredictAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A51A2AF7F179002E4BF3 /* PredictAlbums.swift */; };
 		3EE4A5282AF91910002E4BF3 /* PhonicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5272AF91910002E4BF3 /* PhonicsView.swift */; };
-		3EE4A52C2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit in Resources */ = {isa = PBXBuildFile; fileRef = 3EE4A52B2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit */; };
-		3EE4A5652AF942BA002E4BF3 /* Diffuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4A5642AF942BA002E4BF3 /* Diffuse.swift */; };
-		3EE4A5682AF94300002E4BF3 /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = 3EE4A5672AF94300002E4BF3 /* StableDiffusion */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,13 +34,10 @@
 		3E58738C2AF73AC6003C976A /* Phonics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phonics.entitlements; sourceTree = "<group>"; };
 		3E5873942AF73AC6003C976A /* PhonicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5873982AF73AC6003C976A /* PhonicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsTests.swift; sourceTree = "<group>"; };
-		3EBB7D6C2AFE6E4300A193FB /* PredictAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAlbumView.swift; sourceTree = "<group>"; };
-		3EBB7D6E2AFE6E6D00A193FB /* DiffuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffuseView.swift; sourceTree = "<group>"; };
-		3EE4A5182AF7E021002E4BF3 /* PhonicsClassifier.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = PhonicsClassifier.mlpackage; path = Phonics/Models/PhonicsClassifier.mlpackage; sourceTree = SOURCE_ROOT; };
+		3E5DC1612B344B7C00F69E1E /* Phonics3.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Phonics3.mlpackage; sourceTree = "<group>"; };
+		3EE4A5182AF7E021002E4BF3 /* Phonics2.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = Phonics2.mlpackage; path = Phonics/Models/Phonics2.mlpackage; sourceTree = SOURCE_ROOT; };
 		3EE4A51A2AF7F179002E4BF3 /* PredictAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictAlbums.swift; sourceTree = "<group>"; };
 		3EE4A5272AF91910002E4BF3 /* PhonicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicsView.swift; sourceTree = "<group>"; };
-		3EE4A52B2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit"; sourceTree = "<group>"; };
-		3EE4A5642AF942BA002E4BF3 /* Diffuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffuse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE4A5682AF94300002E4BF3 /* StableDiffusion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				3EE4A51A2AF7F179002E4BF3 /* PredictAlbums.swift */,
-				3EE4A5642AF942BA002E4BF3 /* Diffuse.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -119,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				3EE4A5272AF91910002E4BF3 /* PhonicsView.swift */,
-				3EBB7D6E2AFE6E6D00A193FB /* DiffuseView.swift */,
-				3EBB7D6C2AFE6E4300A193FB /* PredictAlbumView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,8 +117,8 @@
 		3EE4A5292AF91B49002E4BF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3EE4A52B2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit */,
-				3EE4A5182AF7E021002E4BF3 /* PhonicsClassifier.mlpackage */,
+				3E5DC1612B344B7C00F69E1E /* Phonics3.mlpackage */,
+				3EE4A5182AF7E021002E4BF3 /* Phonics2.mlpackage */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,7 +140,6 @@
 			);
 			name = Phonics;
 			packageProductDependencies = (
-				3EE4A5672AF94300002E4BF3 /* StableDiffusion */,
 			);
 			productName = Phonics;
 			productReference = 3E5873832AF73AC4003C976A /* Phonics.app */;
@@ -183,7 +171,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					3E5873822AF73AC4003C976A = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -204,7 +192,6 @@
 			);
 			mainGroup = 3E58737A2AF73AC4003C976A;
 			packageReferences = (
-				3EE4A5662AF94300002E4BF3 /* XCLocalSwiftPackageReference "../../Examples/ml-stable-diffusion" */,
 			);
 			productRefGroup = 3E5873842AF73AC4003C976A /* Products */;
 			projectDirPath = "";
@@ -222,7 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E58738B2AF73AC6003C976A /* Assets.xcassets in Resources */,
-				3EE4A52C2AF94108002E4BF3 /* coreml-Ojimi-anime-kawai-diffusion-cpu-ne-6bit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,13 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE4A5192AF7E021002E4BF3 /* PhonicsClassifier.mlpackage in Sources */,
-				3EBB7D6F2AFE6E6D00A193FB /* DiffuseView.swift in Sources */,
+				3EE4A5192AF7E021002E4BF3 /* Phonics2.mlpackage in Sources */,
 				3E5873872AF73AC4003C976A /* PhonicsApp.swift in Sources */,
 				3EE4A5282AF91910002E4BF3 /* PhonicsView.swift in Sources */,
+				3E5DC1622B344B7C00F69E1E /* Phonics3.mlpackage in Sources */,
 				3EE4A51B2AF7F179002E4BF3 /* PredictAlbums.swift in Sources */,
-				3EE4A5652AF942BA002E4BF3 /* Diffuse.swift in Sources */,
-				3EBB7D6D2AFE6E4300A193FB /* PredictAlbumView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +287,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -364,6 +349,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -391,6 +377,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Phonics/Phonics.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XWH59XV43B;
 				ENABLE_PREVIEWS = YES;
@@ -410,7 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = "0.1.6-rc5";
+				MARKETING_VERSION = 0.1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.neko03.Phonics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -430,6 +417,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Phonics/Phonics.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XWH59XV43B;
 				ENABLE_PREVIEWS = YES;
@@ -449,7 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = "0.1.6-rc5";
+				MARKETING_VERSION = 0.1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.neko03.Phonics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -468,6 +456,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XWH59XV43B;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -492,6 +481,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = XWH59XV43B;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -540,20 +530,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		3EE4A5662AF94300002E4BF3 /* XCLocalSwiftPackageReference "../../Examples/ml-stable-diffusion" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../Examples/ml-stable-diffusion";
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3EE4A5672AF94300002E4BF3 /* StableDiffusion */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = StableDiffusion;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3E58737B2AF73AC4003C976A /* Project object */;
 }
